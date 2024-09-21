@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { Poppins } from 'next/font/google'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Ayla de Oliveira',
@@ -23,8 +25,10 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body className={poppins.className}>
+        <Header />
         {children}
         <Analytics />
+        <Footer />
       </body>
     </html>
   )
