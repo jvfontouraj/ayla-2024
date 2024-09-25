@@ -21,7 +21,7 @@ export function Header() {
     const heroHeight = heroElement ? heroElement.offsetHeight : 0
     const scrollTop = window.scrollY
 
-    if (scrollTop > heroHeight) {
+    if (scrollTop > heroHeight - 1) {
       setIsScrolled(true) // Header is beyond hero section
     } else {
       setIsScrolled(false) // Header is over hero section
@@ -37,8 +37,8 @@ export function Header() {
   return (
     <header
       className={cs(
-        'fixed right-1/2 top-0 z-50 w-full translate-x-1/2',
-        isScrolled ? 'bg-transparent' : 'bg-transparent',
+        'fixed right-1/2 top-0 z-50 w-full translate-x-1/2 py-2',
+        pathname === '/' ? 'bg-transparent' : 'bg-white',
       )}
     >
       {pathname !== '/' && (
