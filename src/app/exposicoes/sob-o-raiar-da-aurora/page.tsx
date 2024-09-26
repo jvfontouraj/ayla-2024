@@ -5,7 +5,7 @@ import '@splidejs/react-splide/css'
 import { useEffect, useState } from 'react'
 
 export default function Aurora() {
-  const [isMobileScreen, setIsMobileScreen] = useState(window.innerWidth <= 400)
+  const [isMobileScreen, setIsMobileScreen] = useState<boolean>(true)
 
   useEffect(() => {
     const handleResize = () => {
