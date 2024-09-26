@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 import { useEffect, useState } from 'react'
 
-export default function Aurora() {
+export default function Encanto() {
   const [isMobileScreen, setIsMobileScreen] = useState(window.innerWidth <= 400)
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function Aurora() {
     }
   }, [])
   return (
-    <main className="mx-auto mb-40 mt-28 flex w-full max-w-7xl flex-col gap-8 px-3">
+    <main className="mx-auto mb-40 mt-20 flex w-full max-w-7xl flex-col gap-8 px-3 lg:mt-28">
       <section className="flex flex-col gap-4">
         <h2 className="text-2xl md:text-4xl">Encanto</h2>
         <Splide

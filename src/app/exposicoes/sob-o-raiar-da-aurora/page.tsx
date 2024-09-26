@@ -21,7 +21,7 @@ export default function Aurora() {
     }
   }, [])
   return (
-    <main className="mx-auto mb-40 mt-28 flex w-full max-w-7xl flex-col gap-8 px-3">
+    <main className="mx-auto mb-40 mt-20 flex w-full max-w-7xl flex-col gap-8 px-3 lg:mt-28">
       <section className="flex flex-col gap-4">
         <h2 className="text-2xl md:text-4xl">Sob o raiar da Aurora</h2>
         <Splide
