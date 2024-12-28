@@ -3,17 +3,22 @@
 import { trabalhos } from '@/content/trabalhos'
 import Image from 'next/image'
 import * as Dialog from '@radix-ui/react-dialog'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Cross1Icon } from '@radix-ui/react-icons'
 
 export default function Trabalhos() {
   const [openDialog, setOpenDialog] = useState(false)
   const [imageIndex, setImageIndex] = useState<number>(0)
+  const [isMobileScreen, setIsMobileScreen] = useState<boolean>()
 
   function openImage(index: number) {
     setImageIndex(index)
     setOpenDialog(true)
   }
+
+  useEffect(() => {
+    setIsMobileScreen(window.innerWidth <= 470)
+  }, [])
 
   return (
     <main className="mx-auto mb-40 mt-28 w-full max-w-7xl px-5">
@@ -24,13 +29,17 @@ export default function Trabalhos() {
         {trabalhos.map((item, index) => (
           <>
             <div key={index} className="flex flex-col gap-4">
-              <Image
-                width={392}
-                height={588}
-                src={item.imagem}
-                alt={item.titulo}
+              <button
+                disabled={isMobileScreen}
                 onClick={() => openImage(index)}
-              />
+              >
+                <Image
+                  width={392}
+                  height={588}
+                  src={item.imagem}
+                  alt={item.titulo}
+                />
+              </button>
               <div className="flex flex-col">
                 <h3 className="text-base font-medium">
                   {item.titulo}, {item.ano}
@@ -43,8 +52,8 @@ export default function Trabalhos() {
           </>
         ))}
         <Dialog.Root open={openDialog} onOpenChange={setOpenDialog}>
-          <Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 z-40 hidden bg-black/70 backdrop-blur-sm md:block" />
-          <Dialog.Content className="data-[state=open]:animate-contentShow fixed left-1/2 top-1/2 z-50 hidden h-full max-h-[90vh] w-fit max-w-[850px] -translate-x-1/2 -translate-y-1/2 flex-col rounded-md bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none md:flex">
+          <Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 z-40 bg-black/70 backdrop-blur-sm" />
+          <Dialog.Content className="data-[state=open]:animate-contentShow fixed left-1/2 top-1/2 z-50 flex h-full max-h-[90vh] w-fit max-w-[850px] -translate-x-1/2 -translate-y-1/2 flex-col rounded-md bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
             <img
               src={trabalhos[imageIndex].imagem}
               alt={trabalhos[imageIndex].titulo}
