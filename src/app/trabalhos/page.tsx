@@ -52,8 +52,8 @@ export default function Trabalhos() {
           </>
         ))}
         <Dialog.Root open={openDialog} onOpenChange={setOpenDialog}>
-          <Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 z-40 bg-black/70 backdrop-blur-sm" />
-          <Dialog.Content className="data-[state=open]:animate-contentShow fixed left-1/2 top-1/2 z-50 flex h-full max-h-[90vh] w-fit max-w-[850px] -translate-x-1/2 -translate-y-1/2 flex-col rounded-md bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+          <Dialog.Overlay className="fixed inset-0 z-40 bg-black/70 backdrop-blur data-[state=open]:animate-overlayShow" />
+          <Dialog.Content className="fixed left-1/2 top-1/2 z-50 flex h-full max-h-[90vh] w-fit max-w-[850px] -translate-x-1/2 -translate-y-1/2 flex-col rounded-md bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none data-[state=open]:animate-contentShow">
             <img
               src={trabalhos[imageIndex].imagem}
               alt={trabalhos[imageIndex].titulo}
