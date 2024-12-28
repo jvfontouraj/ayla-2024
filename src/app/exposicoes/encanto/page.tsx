@@ -5,78 +5,71 @@ import '@splidejs/react-splide/css'
 import { useEffect, useState } from 'react'
 
 export default function Encanto() {
-  const [isMobileScreen, setIsMobileScreen] = useState<boolean>(true)
+  const [isMobileScreen, setIsMobileScreen] = useState<boolean>()
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobileScreen(window.innerWidth <= 400)
-    }
-
-    // Add event listener for window resize
-    window.addEventListener('resize', handleResize)
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
+    setIsMobileScreen(window.innerWidth <= 400)
   }, [])
+
   return (
     <main className="mx-auto mb-40 mt-20 flex w-full max-w-7xl flex-col gap-8 px-3 lg:mt-28">
       <section className="flex flex-col gap-4">
         <h2 className="text-2xl md:text-4xl">Encanto</h2>
-        <Splide
-          options={{
-            rewind: true,
-            autoplay: true,
-            type: 'loop',
-            arrows: false,
-            height: isMobileScreen ? '200px' : '500px',
-            gap: '1rem',
-          }}
-        >
-          <SplideSlide>
-            <img
-              className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
-              src="/exposicoes/encanto/encanto_1.webp"
-              alt="Image 1"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
-              src="/exposicoes/encanto/encanto_2.webp"
-              alt="Image 2"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
-              src="/exposicoes/encanto/encanto_3.webp"
-              alt="Image 3"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
-              src="/exposicoes/encanto/encanto_4.webp"
-              alt="Image 4"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
-              src="/exposicoes/encanto/encanto_5.webp"
-              alt="Image 5"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
-              src="/exposicoes/encanto/encanto_6.webp"
-              alt="Image 6"
-            />
-          </SplideSlide>
-        </Splide>
+        {typeof isMobileScreen !== 'undefined' && (
+          <Splide
+            options={{
+              rewind: true,
+              autoplay: true,
+              type: 'loop',
+              arrows: false,
+              height: isMobileScreen ? '200px' : '500px',
+              gap: '1rem',
+            }}
+          >
+            <SplideSlide>
+              <img
+                className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
+                src="/exposicoes/encanto/encanto_1.webp"
+                alt="Image 1"
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
+                src="/exposicoes/encanto/encanto_2.webp"
+                alt="Image 2"
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
+                src="/exposicoes/encanto/encanto_3.webp"
+                alt="Image 3"
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
+                src="/exposicoes/encanto/encanto_4.webp"
+                alt="Image 4"
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
+                src="/exposicoes/encanto/encanto_5.webp"
+                alt="Image 5"
+              />
+            </SplideSlide>
+            <SplideSlide>
+              <img
+                className="absolute top-1/2 w-full -translate-y-1/2 object-contain"
+                src="/exposicoes/encanto/encanto_6.webp"
+                alt="Image 6"
+              />
+            </SplideSlide>
+          </Splide>
+        )}
       </section>
       <article>
         <h4 className="text-base font-medium md:text-lg">

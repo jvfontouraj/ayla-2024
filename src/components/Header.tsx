@@ -63,8 +63,12 @@ export function Header() {
   return (
     <header
       className={cs(
-        'fixed right-1/2 top-0 z-50 flex w-full translate-x-1/2 justify-between py-2 shadow-sm lg:h-auto lg:items-center lg:shadow-none',
-        !smallScreen && pathname === '/' ? 'bg-transparent' : 'bg-white',
+        'fixed right-1/2 top-0 z-20 flex w-full translate-x-1/2 justify-between py-2 shadow-sm lg:h-auto lg:items-center lg:shadow-none',
+        !smallScreen && pathname === '/'
+          ? isScrolled
+            ? 'bg-white 2xl:bg-transparent'
+            : 'bg-transparent'
+          : 'bg-white',
         open ? 'h-[100dvh]' : 'h-16',
       )}
     >
