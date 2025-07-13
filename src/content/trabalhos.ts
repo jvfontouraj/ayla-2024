@@ -152,14 +152,14 @@ export const trabalhos: TrabalhosProps[] = [
     ano: 2024,
     tecnica: 'Óleo sobre tela',
     dimensoes: '22 x 16 cm',
-    imagem: '/imgs/FLORZINHAS.JPG',
+    imagem: '/imgs/FLORZINHAS.jpg',
   },
   {
     titulo: 'Acarajés para Iansã (e para os Eguns)',
     ano: 2024,
     tecnica: 'Óleo sobre tela',
     dimensoes: '40 x 50 cm',
-    imagem: '/imgs/ACARAJESPARAIANSA.JPG',
+    imagem: '/imgs/ACARAJESPARAIANSA.jpg',
   },
 
   {
@@ -167,28 +167,28 @@ export const trabalhos: TrabalhosProps[] = [
     ano: 2023,
     tecnica: 'Encáustica sobre MDF',
     dimensoes: '40 x 30 cm',
-    imagem: '/imgs/QUEMTEMFETEMTUDOQUEMNAOTEMFENAOTEMNADA.JPG',
+    imagem: '/imgs/QUEMTEMFETEMTUDOQUEMNAOTEMFENAOTEMNADA.jpg',
   },
   {
     titulo: 'Melão para Oxum III',
     ano: 2023,
     tecnica: 'Óleo sobre MDF',
     dimensoes: '19 x 24 cm',
-    imagem: '/imgs/MELAOPARAOXUM3.JPG',
+    imagem: '/imgs/MELAOPARAOXUM3.jpg',
   },
   {
     titulo: 'Lança de Ouro',
     ano: 2023,
     tecnica: 'Óleo e folha dourada sobre tela',
     dimensoes: '16 x 22 cm',
-    imagem: '/imgs/LANCADEOURO.JPG',
+    imagem: '/imgs/LANCADEOURO.jpg',
   },
   {
     titulo: 'Encanto',
     ano: 2023,
     tecnica: 'Óleo e folha dourada sobre tela',
     dimensoes: '16 x 22 cm',
-    imagem: '/imgs/ENCANTO.JPG',
+    imagem: '/imgs/ENCANTO.jpg',
   },
 
   {
@@ -196,13 +196,13 @@ export const trabalhos: TrabalhosProps[] = [
     ano: 2019,
     tecnica: 'Óleo e pasta de cera sobre tela',
     dimensoes: '20 x 40 cm',
-    imagem: '/imgs/OFERENDAPARAOXUM.JPG',
+    imagem: '/imgs/OFERENDAPARAOXUM.jpg',
   },
   {
     titulo: 'Orayêyêô',
     ano: 2019,
     tecnica: 'Encáustica sobre MDF',
     dimensoes: '24 x 19 cm',
-    imagem: '/imgs/ORAYEYEO.JPG',
+    imagem: '/imgs/ORAYEYEO.jpg',
   },
 ]
