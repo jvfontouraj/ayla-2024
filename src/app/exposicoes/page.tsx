@@ -1,5 +1,5 @@
 import {
-  // exposicoesColetivas,
+  exposicoesColetivas,
   exposicoesIndividuais,
 } from '@/content/exposicoes'
 import Link from 'next/link'
@@ -28,11 +28,11 @@ export default function Exposicoes() {
           ))}
         </div>
       </section>
-      {/* <section className="mx-auto flex w-full max-w-5xl flex-col gap-8">
+      <section className="mx-auto flex w-full max-w-5xl flex-col gap-8">
         <h2 className="text-3xl">Exposições Coletivas</h2>
         <div className="flex flex-col gap-10">
           {exposicoesColetivas.map((item, index) => (
-            <div key={index} className="flex cursor-default flex-col gap-2">
+            <Link href={item.url} key={index} className="flex flex-col gap-2">
               <div className="relative h-[450px] w-full overflow-hidden">
                 <img
                   src={item.imagem}
@@ -43,10 +43,10 @@ export default function Exposicoes() {
               <h3 className="text-xl">
                 {item.titulo} | {item.ano}
               </h3>
-            </div>
+            </Link>
           ))}
         </div>
-      </section> */}
+      </section>
     </main>
   )
 }

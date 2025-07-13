@@ -33,6 +33,9 @@ export default function Home() {
             />
           </div>
           <div className="flex w-full flex-col justify-center gap-3 px-7 py-5 text-sm md:text-base lg:w-1/2 lg:p-10">
+            <h2 className="text-base font-semibold md:text-lg">
+              Ayla de Oliveira, 1997
+            </h2>
             {texto.map((paragrafo, index) => (
               <p key={index}>{paragrafo}</p>
             ))}
@@ -46,7 +49,7 @@ export default function Home() {
               </Link>
               {'|'}
               <Link
-                href={'/Ayla_de_Oliveira_Portfolio_2024.pdf'}
+                href={'/Ayla de Oliveira Portfólio 2025.pdf'}
                 className="underline"
                 download
               >
@@ -72,12 +75,5 @@ export default function Home() {
 }
 
 const texto = [
-  'Ayla, pintora e umbandista, imersa no universo da espiritualidade afro-brasileira, transmuta suas vivências em obras de arte que convidam à contemplação e à reflexão. Com formação em Pintura pela Escola de Belas Artes da UFRJ, a artista convida o espectador a se conectar com a beleza intrínseca das coisas simples e a vivenciar a arte como uma experiência sensível/espiritual.',
-
-  'Sua pesquisa artística se concentra na investigação de temas como a fé, a natureza e a ancestralidade, tensionando a razão e o sensível em prol da intuição. Em suas séries de pintura de oferendas, a artista revela uma profunda sensibilidade para captar a energia e a espiritualidade presentes nos objetos do seu cotidiano. Algumas obras são pintadas com pasta de cera e óleo, enquanto outras utilizam a técnica ancestral da encáustica sobre madeira, criando um universo visual rico em simbolismo e matéria.',
-
-  'Como bem observa Ana Clara Simões Lopes, "Ayla bem sabe em que se reconhece e quem reverencia quando elabora as imagens que pinta. Desta forma, a partir de um decidido processo de auto identificação, na intercessão entre o que são e o que simbolizam, os elementos de Ayla e suas significações se tornam um e são portanto "(...) indiferenciados, porque se fundem, crescem juntos, concretizam-se numa unidade imediata." Tal unidade faz-se ver em cada uma de suas representações, como fios que contribuem na tecelagem de uma existência que se firma também em melões, velas e oferendas e, principalmente, no fato de que cada objeto, elemento, composição e pincelada constitui e é também constituído pela artista."',
-  'Através de suas obras, Ayla não apenas compartilha sua fé e sua cultura, mas também busca contribuir para o diálogo entre a arte contemporânea e as tradições afro-brasileiras, combatendo a intolerância e promovendo a difusão das mesmas. ',
-
-  'Atualmente é representada pela galeria Mitre e produz em seu atelier no Rio de Janeiro.',
+  'A pintura de Ayla de Oliveira emerge de uma experiência espiritual e sensível, profundamente enraizada nas tradições da umbanda. Por meio de composições que evocam um amplo repertório — passando pelas tradições da natureza-morta, do retrato, da paisagem e do ícone —, a artista constrói imagens de forte carga simbólica e energética, em que velas, frutas, flores, bebidas e oferendas se tornam manifestações tangíveis do invisível.  Sua prática explora técnicas como encáustica sobre madeira e misturas de cera com óleo, criando superfícies densas e vibrantes, em que planos de cor operam como campos abertos, em constante transformação. A matéria pictórica, muitas vezes trabalhada em passadas imprecisas ou massas indefinidas, reforça a ideia de uma imagem em estado de travessia — entre a intenção e a intuição, entre o material e o espiritual. Ao articular a fé, o culto e o afeto, a artista trabalha com uma poética que se oferece como ícone e talismã. Suas obras propõem um espaço de contemplação e reconexão, reafirmando a arte como campo de expressão da presença, do sagrado e das forças ocultas que moldam o mundo. Sua exposições individuais incluem:  "Sob o raiar da Aurora" (2024, Mitre Galeria, Belo Horizonte – Brasil) e "Encanto" (2023, Bacorejo, Rio de Janeiro – Brasil). Participou das exposições coletivas: "100 Anos da Colônia Juliano Moreira: arquivos, territórios e imaginários" (2025, Museu Bispo do Rosário, Rio de Janeiro – Brasil) e "O Caminho entre o Céu e a Terra" (2024, Centro Cultural dos Correios, Rio de Janeiro – Brasil).',
 ]

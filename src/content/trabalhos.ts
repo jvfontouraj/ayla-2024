@@ -8,6 +8,27 @@ interface TrabalhosProps {
 
 export const trabalhos: TrabalhosProps[] = [
   {
+    titulo: 'Buquê com fita vermelha',
+    ano: 2025,
+    tecnica: 'Óleo sobre tela',
+    dimensoes: '71,5 x 51,5 cm',
+    imagem: '/imgs/BUQUECOMFITAVERMELHA.webp',
+  },
+  {
+    titulo: 'Mesa de baralho cigano',
+    ano: 2025,
+    tecnica: 'Óleo sobre tela',
+    dimensoes: '71,5 x 51,5 cm',
+    imagem: '/imgs/MESADEBARALHOCIGANO.webp',
+  },
+  {
+    titulo: 'Cesta de Frutas Amarelas',
+    ano: 2025,
+    tecnica: 'Óleo sobre tela',
+    dimensoes: '70 x 50 cm',
+    imagem: '/imgs/CESTADEFRUTASAMARELAS.webp',
+  },
+  {
     titulo: 'Cesta com frutas e pães',
     ano: 2024,
     tecnica: 'Óleo sobre tela',
@@ -125,5 +146,63 @@ export const trabalhos: TrabalhosProps[] = [
     tecnica: 'Óleo sobre tela',
     dimensoes: '16 x 22 cm',
     imagem: '/imgs/ANESTESIA.webp',
+  },
+  {
+    titulo: 'Florzinhas',
+    ano: 2024,
+    tecnica: 'Óleo sobre tela',
+    dimensoes: '22 x 16 cm',
+    imagem: '/imgs/FLORZINHAS.JPG',
+  },
+  {
+    titulo: 'Acarajés para Iansã (e para os Eguns)',
+    ano: 2024,
+    tecnica: 'Óleo sobre tela',
+    dimensoes: '40 x 50 cm',
+    imagem: '/imgs/ACARAJESPARAIANSA.JPG',
+  },
+
+  {
+    titulo: 'Quem tem fé tem tudo, quem não tem fé não tem nada',
+    ano: 2023,
+    tecnica: 'Encáustica sobre MDF',
+    dimensoes: '40 x 30 cm',
+    imagem: '/imgs/QUEMTEMFETEMTUDOQUEMNAOTEMFENAOTEMNADA.JPG',
+  },
+  {
+    titulo: 'Melão para Oxum III',
+    ano: 2023,
+    tecnica: 'Óleo sobre MDF',
+    dimensoes: '19 x 24 cm',
+    imagem: '/imgs/MELAOPARAOXUM3.JPG',
+  },
+  {
+    titulo: 'Lança de Ouro',
+    ano: 2023,
+    tecnica: 'Óleo e folha dourada sobre tela',
+    dimensoes: '16 x 22 cm',
+    imagem: '/imgs/LANCADEOURO.JPG',
+  },
+  {
+    titulo: 'Encanto',
+    ano: 2023,
+    tecnica: 'Óleo e folha dourada sobre tela',
+    dimensoes: '16 x 22 cm',
+    imagem: '/imgs/ENCANTO.JPG',
+  },
+
+  {
+    titulo: 'Oferenda para Oxum',
+    ano: 2019,
+    tecnica: 'Óleo e pasta de cera sobre tela',
+    dimensoes: '20 x 40 cm',
+    imagem: '/imgs/OFERENDAPARAOXUM.JPG',
+  },
+  {
+    titulo: 'Orayêyêô',
+    ano: 2019,
+    tecnica: 'Encáustica sobre MDF',
+    dimensoes: '24 x 19 cm',
+    imagem: '/imgs/ORAYEYEO.JPG',
   },
 ]
